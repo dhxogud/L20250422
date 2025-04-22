@@ -8,5 +8,6 @@ public:
 	virtual ~AGalric();
 
 	virtual void Use() override;
+	void Smell();
 };
 

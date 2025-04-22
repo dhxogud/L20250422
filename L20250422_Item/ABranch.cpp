@@ -12,3 +12,8 @@ void ABranch::Use()
 {
 
 }
+
+void ABranch::Swing()
+{
+
+}

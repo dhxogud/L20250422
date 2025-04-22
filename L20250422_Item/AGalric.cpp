@@ -13,3 +13,7 @@ void AGalric::Use()
 {
 
 }
+void AGalric::Smell()
+{
+
+}

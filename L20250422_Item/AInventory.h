@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "AItem.h"
 
 class AItem;
 
@@ -9,7 +10,7 @@ public:
 	AInventory();
 	virtual ~AInventory();
 
-	std::vector<AItem*> GetAllItems()
+	inline std::vector<AItem*> GetAllItems()
 	{
 		return Items;
 	}
