@@ -1,9 +1,9 @@
 #include "AActor.h"
 
 
-AActor::AActor()
+AActor::AActor(char Shape)
 {
-	Shape = ' '; // 사실상 안보이는 상태
+	this->Shape = Shape;
 }
 AActor::~AActor()
 {

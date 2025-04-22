@@ -1,15 +1,22 @@
 #include "APlayer.h"
 #include "PlayerStat.h"
 
-APlayer::APlayer()
+APlayer::APlayer(PlayerStat* Stat) : AActor(Shape)
 {
-	Shape = 'P';
+	this->Shape = Shape;
+	this->Stat = Stat;
 }
 APlayer::~APlayer()
 {
 
 }
-void APlayer::Initialize(PlayerStat* Stat)
+
+void APlayer::Attack(AEnemy* Enemy)
 {
-	this->Stat = Stat;
+	Enemy->OnHit(Stat);
+}
+
+void APlayer::OnHit(BaseStat* Attacker)
+{
+
 }

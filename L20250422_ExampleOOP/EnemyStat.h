@@ -1,13 +1,14 @@
 #pragma once
+
 #include "BaseStat.h"
 
-class PlayerStat : public BaseStat
+class EnemyStat : BaseStat
 {
 public:
-	PlayerStat();
-	virtual ~PlayerStat();
+	EnemyStat();
+	virtual ~EnemyStat();
 	void OnDead(BaseStat* Attacker) override;
-	void GainReward(int Gold, float Exp);
+	void Drop();
 protected:
 	int Gold;
 	float Exp;

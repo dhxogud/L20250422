@@ -1,12 +1,12 @@
 #include <iostream>
 
 #include "AEnemy.h"
-#include "Stat.h"
+#include "EnemyStat.h"
 
-
-AEnemy::AEnemy()
+AEnemy::AEnemy(EnemyStat* Stat) : AActor(Shape)
 {
-	Shape = 'E';
+	this->Shape = Shape;
+	this->Stat = Stat;
 }
 
 AEnemy::~AEnemy()
@@ -14,7 +14,12 @@ AEnemy::~AEnemy()
 	
 }
 
-void AEnemy::Initialize(class Stat* Stat)
+void AEnemy::Attack(APlayer* Player)
 {
-	this->Stat = Stat;
+
+}
+
+void AEnemy::OnHit(BaseStat* Attacker)
+{
+
 }

@@ -8,7 +8,7 @@ protected:
 	FVector2D Location;
 
 public:
-	AActor();
+	AActor(char Shape);
 	virtual ~AActor();
 	void Tick();
 	void AddRelativeLocation(FVector2D Delta);

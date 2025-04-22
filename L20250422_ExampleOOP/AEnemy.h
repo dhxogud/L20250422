@@ -1,16 +1,15 @@
 #pragma once
 #include "AActor.h"
-#include "Stat.h"
-
+#include "EnemyStat.h"
+#include "APlayer.h"
 class AEnemy : public AActor
 {
 public:
-	AEnemy();
+	AEnemy(EnemyStat* Stat);
 	virtual ~AEnemy();
-	void Initialize(Stat* Stat);
-	void Drop();
+	void Attack(APlayer* Player);
 
 protected:
-	Stat* Stat;
+	EnemyStat* Stat;
 };
 
