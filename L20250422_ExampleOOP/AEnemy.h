@@ -8,6 +8,7 @@ public:
 	AEnemy(EnemyStat* Stat);
 	virtual ~AEnemy();
 	void Attack(APlayer* Player);
+	void OnHit(BaseStat* Attacker);
 
 protected:
 	EnemyStat* Stat;
