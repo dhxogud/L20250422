@@ -128,13 +128,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AActor.cpp" />
-    <ClCompile Include="BaseUnit.cpp" />
+    <ClCompile Include="AEnemy.cpp" />
+    <ClCompile Include="APlayer.cpp" />
+    <ClCompile Include="FVector2D.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PlayerStat.cpp" />
+    <ClCompile Include="Stat.cpp" />
     <ClCompile Include="UWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AActor.h" />
-    <ClInclude Include="BaseUnit.h" />
+    <ClInclude Include="AEnemy.h" />
+    <ClInclude Include="APlayer.h" />
+    <ClInclude Include="FVector2D.h" />
+    <ClInclude Include="PlayerStat.h" />
+    <ClInclude Include="Stat.h" />
     <ClInclude Include="UWorld.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
