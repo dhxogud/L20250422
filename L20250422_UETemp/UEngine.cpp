@@ -8,7 +8,7 @@ UEngine::UEngine()
 }
 UEngine::~UEngine()
 {
-
+	Terminate();
 }
 void UEngine::Initialize()
 {

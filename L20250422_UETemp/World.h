@@ -1,4 +1,8 @@
 #pragma once
+
+#include <vector>
+#include "AActor.h"
+
 class UWorld
 {
 public:
@@ -6,5 +10,13 @@ public:
 	virtual ~UWorld();
 	void Tick();
 	void Render();
+	void SpawnActor(AActor* NewActor);
+	void DestroyActor(AActor* DestroyedActor);
+
+	std::vector<AActor*>& GetAllActors();
+	//vector 전체복사해서 주지말고, reference 참조해서 쓰라고... vector<AActor*>& 붙임
+protected:
+	//[][][][][][][][][][]
+	std::vector<AActor*> Actors;
 };
 

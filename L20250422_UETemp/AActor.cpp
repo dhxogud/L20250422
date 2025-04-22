@@ -1,0 +1,31 @@
+#include <iostream>
+#include <Windows.h>
+#include "AActor.h"
+
+AActor::AActor()
+{
+	Shape = ' ';
+}
+
+AActor::~AActor()
+{
+
+}
+
+void AActor::AddActorWorldOffset(FVector2D offset)
+{
+	Location.X += offset.X;
+	Location.Y += offset.Y;
+}
+
+void AActor::Tick()
+{
+}
+
+void AActor::Render()
+{
+	COORD Position = { static_cast<SHORT>(Location.X), (SHORT) Location.Y };
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Position);
+
+	std::cout << Shape;
+}

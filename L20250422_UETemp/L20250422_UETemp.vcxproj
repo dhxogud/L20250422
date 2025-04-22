@@ -127,12 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AActor.cpp" />
+    <ClCompile Include="APlayer.cpp" />
+    <ClCompile Include="AWall.cpp" />
+    <ClCompile Include="FVector2D.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="UEngine.cpp" />
     <ClCompile Include="UInput.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AActor.h" />
+    <ClInclude Include="APlayer.h" />
+    <ClInclude Include="AWall.h" />
+    <ClInclude Include="FVector2D.h" />
     <ClInclude Include="UEngine.h" />
     <ClInclude Include="UInput.h" />
     <ClInclude Include="World.h" />
