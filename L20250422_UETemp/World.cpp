@@ -1,3 +1,5 @@
+#include <fstream>
+#include <string>
 #include "World.h"
 
 #include "APlayer.h"
@@ -6,7 +8,7 @@
 UWorld::UWorld()
 {
 	//Load
-	SpawnActor(new APlayer());
+	/*SpawnActor(new APlayer());
 	SpawnActor(new AWall());
 
 	AWall* NewWall = new AWall();
@@ -17,7 +19,7 @@ UWorld::UWorld()
 	NewWall = new AWall();
 	NewWall->Location.X = 2;
 	NewWall->Location.Y = 0;
-	SpawnActor(NewWall);
+	SpawnActor(NewWall);*/
 }
 
 UWorld::~UWorld()
@@ -28,7 +30,11 @@ UWorld::~UWorld()
 	}
 	Actors.clear();
 }
-
+void UWorld::Load(std::string fileName = "level01.map")
+{
+	std::ifstream ReadFile;
+	ReadFile.open(fileName);
+}
 void UWorld::Tick()
 {
 	for (auto Actor : Actors)

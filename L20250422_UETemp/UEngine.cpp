@@ -14,6 +14,7 @@ void UEngine::Initialize()
 {
 	InputDevice = new UInput();
 	World = new UWorld();
+	World->Load();
 }
 void UEngine::Run()
 {
